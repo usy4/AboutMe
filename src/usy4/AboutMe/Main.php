@@ -3,6 +3,7 @@
 namespace usy4\AboutMe;
 
 use usy4\AboutMe\commands\AboutMeCommand;
+use usy4\AboutMe\EventListener;
 
 use CortexPE\Commando\PacketHooker;
 
@@ -22,6 +23,7 @@ class Main extends PluginBase{
         if (!PacketHooker::isRegistered()){
             PacketHooker::register($this);
         }
+        Server::getInstance()->getPluginManager()->registerEvents(new EventListener($this), $this);
         Server::getInstance()->getCommandMap()->register($this->getName(), new AboutMeCommand($this, "aboutme", "To write about yourself or read about others", aliases: ["am"])); 
         self::$AM = new Config($this->getDataFolder().'/AboutMe.yml', 2);
         $this->getConfig();
