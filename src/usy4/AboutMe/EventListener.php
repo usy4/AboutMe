@@ -6,6 +6,7 @@ namespace usy4\AboutMe;
 
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\Listener;
+use pocketmine\player\Player;
 
 use usy4\AboutMe\Main;
 
