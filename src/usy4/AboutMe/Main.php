@@ -69,9 +69,9 @@ class Main extends PluginBase{
         });
         $form->setTitle("§fAboutMe");
         if(self::$AM->get($player->getName()) == true){
-            $form->addInput("Write about urself:",  "{line} to new line, {color} to color messages,\n{empty} to emtpy aboutme", self::$AM->get($player->getName()));
+            $form->addInput("Write about urself:",  "{line} to new line,\n{color} to color messages.", self::$AM->get($player->getName()));
         } else {
-             $form->addInput("Write about urself:", "{line} to new line, {color} to color messages,\n{empty} to emtpy aboutme");
+             $form->addInput("Write about urself:", "{line} to new line,\n{color} to color messages.");
         }
         $player->sendForm($form);
     }
