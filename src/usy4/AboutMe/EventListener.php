@@ -15,8 +15,8 @@ class EventListener implements Listener {
     {
         $player = $event->getEntity();
         if(!$player instanceof Player) return;
-        if(Main::getConfig()->get("DamageToRead") == false) return;
-        if($player->getWorld()->getFolderName() !== Main::getConfig()->get("WorldName")) return;
+        if(Main::$config->get("DamageToRead") == false) return;
+        if($player->getWorld()->getFolderName() !== Main::$config->get("WorldName")) return;
         Main::WriteForm($player);
     }
 
