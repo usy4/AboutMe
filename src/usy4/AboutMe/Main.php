@@ -16,14 +16,14 @@ use Vecnavium\FormsUI\CustomForm;
 use Vecnavium\FormsUI\SimpleForm;
 
 class Main extends PluginBase{
-
+    
     public static $AM;
 
     public function onEnable() : void{
         if (!PacketHooker::isRegistered()){
             PacketHooker::register($this);
         }
-        Server::getInstance()->getPluginManager()->registerEvents(new EventListener(), $this);
+        Server::getInstance()->getPluginManager()->registerEvents(new EventListener($this), $this);
         Server::getInstance()->getCommandMap()->register($this->getName(), new AboutMeCommand($this, "aboutme", "To write about yourself or read about others", aliases: ["am"])); 
         self::$AM = new Config($this->getDataFolder().'/AboutMe.yml', 2);
         $this->getConfig();
