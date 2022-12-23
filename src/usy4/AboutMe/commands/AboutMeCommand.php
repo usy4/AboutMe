@@ -47,7 +47,6 @@ class AboutMeCommand extends BaseCommand
             $sender->sendMessage("Usage: /aboutme <write/read(player)>");
             return;
         }
-        Main::AboutMeForm($sender, $args["player"]);
-	}
+    }
 
 }
