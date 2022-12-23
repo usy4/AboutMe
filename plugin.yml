@@ -1,0 +1,10 @@
+name: AboutMe
+author: usy4
+api: 4.0.0
+version: 1.0.0
+main: usy4\AboutMe\Main
+descriptions: To write about yourself or read about others
+
+permissions:
+  aboutme.command:
+    default: true
