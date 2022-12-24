@@ -14,8 +14,7 @@ use usy4\AboutMe\Main;
 class EventListener implements Listener {
 
     /**
-     * @ignoreCancelled true
-      * @priority LOWEST
+       * @handleCancelled
      */  
     
     public function onDamage(EntityDamageEvent $event): void
