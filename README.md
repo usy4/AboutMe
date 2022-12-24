@@ -7,6 +7,13 @@ href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
 </a>
 # How to use
 Usage: `/aboutme <write/read(player)>`
+# config
+```
+---
+DamageToRead: true
+WorldName: world
+...
+```
 # My Discord
 <a
 href="https://discord.com/users/380045837457162242" target="_blank">
