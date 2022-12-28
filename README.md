@@ -1,5 +1,5 @@
 # AboutMe
-To write about yourself or read about others
+This plugin you can with it write what you want about yourself and other players can read it or read about others
 
 <a
 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
